@@ -28,4 +28,4 @@ def predict():
     return render_template('index.html',preds=enc.inverse_transform(pred)[0].upper(),vals=vals,pred=pred)
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0',debug=True)
+    app.run(host='0.0.0.0',port=80,debug=True)
